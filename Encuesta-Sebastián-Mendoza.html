@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="Estilos-Sebastián-Mendoza.css">
+    <title>Encuesta</title>
+</head>
+<body class="container-lg bg-dark">
+    <h2 class="mb-3 text-bg-light">Encuesta examen</h2>
+
+    <form id="FormularioExamen" action="Resultado-Sebastián-Mendoza.html" method="get">
+
+        <div>
+            <label for="edad" class="form-label text-white">Edad:</label>
+            <input type="number" name="edad" id="Mendoza" class="form-control">
+        </div>
+
+        <div>
+            <label for="genero" class="form-label text-white">Genero:</label>
+             <select id="select" class="form-select">
+                <option disabled selected>Elige tu genero</option>
+                <option value="Hombre"> Hombre</option>
+                <option value="Mujer">Mujer</option>
+              </select>
+        </div>
+        
+        <div>
+            <label for="nivel" class="form-label text text-white">Nivel de educación:</label>
+         <select id="Sosa" class="form-select">
+             <option value disabled selected>¿Cual es tu nivel de educación?</option>
+             <option value="Preescolar">Preescolar</option>
+             <option value="Primaria">Primaria</option>
+             <option value="Secundaria">Secundaria</option>
+             <option value="Bachillerato">Bachillerato</option>
+             <option value="Universidad">Universidad</option>
+             <option value="Posgrado">Posgrado</option>
+         </select>
+        </div>
+
+        <div>
+            <label for="ocupación" class="form-label text text-white">Ocupación:</label>
+            <input type="text" name="ocupación" id="ocupación" class="form-control">
+        </div>
+       
+        <div>
+            <button type="button" class="btn btn-primary" onclick="enviarFormulario()">Enviar</button>
+        </div>
+        
+    </form>
+        <script src="Script-Sebastián-Mendoza.js"></script>
+</body>
+</html>
